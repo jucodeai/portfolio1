@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안형주 | AI Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Noto Sans KR과 Roboto 폰트를 TailwindCSS에 적용 */
+        body {
+            font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* 섹션 간 부드러운 전환을 위한 애니메이션 */
+        .section-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .section-fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* 그라데이션 텍스트 */
+        .gradient-text {
+            background: linear-gradient(to right, #34d399, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-10 border-b border-gray-700">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">Jihun Kim</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-emerald-400 transition-colors">소개</a>
+                <a href="#skills" class="hover:text-emerald-400 transition-colors">기술</a>
+                <a href="#projects" class="hover:text-emerald-400 transition-colors">프로젝트</a>
+                <a href="#contact" class="hover:text-emerald-400 transition-colors">연락처</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center py-20 section-fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">데이터로 가치를 만드는</h1>
+            <h2 class="text-5xl md:text-7xl font-bold gradient-text mb-6">인공지능 개발자</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 mb-8">
+                복잡한 문제 속에서 패턴을 발견하고, 최적의 인공지능 모델을 설계하여 구현합니다. 아이디어를 현실의 솔루션으로 만드는 일에 열정을 다합니다.
+            </p>
+            <a href="#projects" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105">
+                프로젝트 보기
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 flex flex-col md:flex-row items-center gap-12 section-fade-in">
+            <div class="w-full md:w-1/3">
+                <img src="https://placehold.co/400x400/1a202c/34d399?text=Profile" alt="프로필 이미지" class="rounded-full shadow-lg mx-auto">
+            </div>
+            <div class="w-full md:w-2/3">
+                <h2 class="text-4xl font-bold mb-4">소개</h2>
+                <p class="text-gray-400 mb-4">
+                    안녕하세요, AI 기술을 통해 혁신적인 솔루션을 만드는 개발자 안형주입니다. 
+                    저는 복잡한 문제 해결을 위한 효율적인 AI 모델 개발과 최적화에 깊은 흥미를 가지고 있습니다.
+                </p>
+                <p class="text-gray-400">
+                    다년간의 실무 경험을 통해 쌓은 Python 프로그래밍 역량과 TensorFlow, PyTorch 등 최신 AI 프레임워크에 대한 깊은 이해를 바탕으로, 컴퓨터 비전부터 자연어 처리에 이르기까지 다양한 AI 프로젝트를 성공적으로 이끌었습니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 section-fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12">보유 기술</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- AI / Machine Learning -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-emerald-400 mb-4">인공지능 & 머신러닝</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-700 px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-gray-700 px-3 py-1 rounded-full">TensorFlow / Keras</span>
+                        <span class="bg-gray-700 px-3 py-1 rounded-full">PyTorch</span>
+                        <span class="bg-gray-700 px-3 py-1 rounded-full">Scikit-learn</span>
+                        <span class="bg-gray-700 px-3 py-1 rounded-full">OpenCV</span>
+                        <span class="bg-gray-700 px-3 py-1 rounded-full">TensorFlow Lite</span>
+                        <span class="bg-gray-700 px-3 py-1 rounded-full">ONNX</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Etc -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-emerald-400 mb-4">개발 도구 및 기타</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-700 px-3 py-1 rounded-full">Git & GitHub</span>
+                        <span class="bg-gray-700 px-3 py-1 rounded-full">Docker</span>
+                        <span class="bg-gray-700 px-3 py-1 rounded-full">AWS / GCP</span>
+                        <span class="bg-gray-700 px-3 py-1 rounded-full">SQL / NoSQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 section-fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12">주요 프로젝트</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden group">
+                    <img src="https://placehold.co/600x400/1f2937/34d399?text=Project+1" alt="프로젝트 1 이미지" class="w-full h-48 object-cover group-hover:scale-105 transition-transform">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">실시간 객체 탐지 및 분석 시스템</h3>
+                        <p class="text-gray-400 mb-4 text-sm">CCTV 영상에서 특정 객체(사람, 차량 등)를 실시간으로 탐지하고 동선을 추적하는 AI 모델을 개발했습니다.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-emerald-900 text-emerald-300 px-2 py-1 rounded">YOLOv5</span>
+                            <span class="text-xs bg-emerald-900 text-emerald-300 px-2 py-1 rounded">OpenCV</span>
+                             <span class="text-xs bg-emerald-900 text-emerald-300 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs bg-emerald-900 text-emerald-300 px-2 py-1 rounded">DeepStream</span>
+                        </div>
+                        <a href="#" class="text-emerald-400 hover:underline">GitHub에서 보기 &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden group">
+                    <img src="https://placehold.co/600x400/1f2937/60a5fa?text=Project+2" alt="프로젝트 2 이미지" class="w-full h-48 object-cover group-hover:scale-105 transition-transform">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">자연어 처리 기반 챗봇 시스템</h3>
+                        <p class="text-gray-400 mb-4 text-sm">사용자 의도를 파악하고 질문에 적절히 답변하는 딥러닝 기반의 챗봇을 설계하고 서비스에 적용했습니다.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-900 text-blue-300 px-2 py-1 rounded">BERT</span>
+                            <span class="text-xs bg-blue-900 text-blue-300 px-2 py-1 rounded">PyTorch</span>
+                            <span class="text-xs bg-blue-900 text-blue-300 px-2 py-1 rounded">Flask</span>
+                            <span class="text-xs bg-blue-900 text-blue-300 px-2 py-1 rounded">Docker</span>
+                        </div>
+                        <a href="#" class="text-blue-400 hover:underline">GitHub에서 보기 &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden group">
+                    <img src="https://placehold.co/600x400/1f2937/a78bfa?text=Project+3" alt="프로젝트 3 이미지" class="w-full h-48 object-cover group-hover:scale-105 transition-transform">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">추천 시스템 알고리즘 개발</h3>
+                        <p class="text-gray-400 mb-4 text-sm">사용자 행동 데이터를 분석하여 개인화된 콘텐츠를 추천하는 협업 필터링 기반 추천 모델을 개발했습니다.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-purple-900 text-purple-300 px-2 py-1 rounded">Scikit-learn</span>
+                            <span class="text-xs bg-purple-900 text-purple-300 px-2 py-1 rounded">Pandas</span>
+                            <span class="text-xs bg-purple-900 text-purple-300 px-2 py-1 rounded">SQL</span>
+                            <span class="text-xs bg-purple-900 text-purple-300 px-2 py-1 rounded">FastAPI</span>
+                        </div>
+                        <a href="#" class="text-purple-400 hover:underline">GitHub에서 보기 &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center section-fade-in">
+            <h2 class="text-4xl font-bold mb-4">연락처</h2>
+            <p class="text-gray-400 max-w-xl mx-auto mb-8">
+                새로운 기회에 항상 열려있습니다. 함께 만들고 싶은 아이디어가 있다면 편하게 연락 주세요.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:your-email@example.com" class="text-emerald-400 hover:text-emerald-300 text-lg">이메일</a>
+                <a href="https://github.com/your-username" target="_blank" class="text-emerald-400 hover:text-emerald-300 text-lg">GitHub</a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="text-emerald-400 hover:text-emerald-300 text-lg">LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2025 안형주. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 스크롤 시 섹션이 부드럽게 나타나는 효과
+        const sections = document.querySelectorAll('.section-fade-in');
+        const options = {
+            root: null,
+            threshold: 0.1,
+            rootMargin: "0px"
+        };
+        const observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
+
